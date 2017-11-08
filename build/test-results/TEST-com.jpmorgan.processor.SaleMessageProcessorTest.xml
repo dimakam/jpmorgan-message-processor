@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jpmorgan.processor.SaleMessageProcessorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-11-08T00:48:48" hostname="localhost" time="0.03">
+  <properties/>
+  <testcase name="testBulkSale" classname="com.jpmorgan.processor.SaleMessageProcessorTest" time="0.02"/>
+  <testcase name="testAdjacent" classname="com.jpmorgan.processor.SaleMessageProcessorTest" time="0.009"/>
+  <testcase name="testSingleSale" classname="com.jpmorgan.processor.SaleMessageProcessorTest" time="0.001"/>
+  <testcase name="testAdjacentWithoutSells" classname="com.jpmorgan.processor.SaleMessageProcessorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
