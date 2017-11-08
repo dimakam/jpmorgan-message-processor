@@ -1,9 +1,16 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'application'
 
 repositories {
     mavenCentral()
 }
+
+run {
+    args findProperty('target')
+}
+
+mainClassName = "com.jpmorgan.AppRunner"
 
 jar {
     baseName = 'jpmorgan-message-processor'
@@ -18,10 +25,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-task run(type: JavaExec, dependsOn: classes) {
-    if (project.hasProperty('path')) {
-        args(path.split(' '))
-    }
-    main = "com.jpmorgan.AppRunner"
-    classpath = sourceSets.main.runtimeClasspath
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.3'
 }

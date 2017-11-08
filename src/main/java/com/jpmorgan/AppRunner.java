@@ -36,6 +36,8 @@ public class AppRunner {
         Assert.isTrue(batch > 0, "batch cannot be less than 0");
         Assert.isTrue(throughput >= batch, "throughput cannot be less than batch");
 
+        System.out.println("SOURCE: " + source);
+
         this.batch = batch;
         this.throughput = throughput;
         this.source = source.trim();
@@ -57,7 +59,7 @@ public class AppRunner {
                     LOGGER.info("Application reached " + throughput + " messages and stopping further processing...");
                     printAdjacents(statistics.getAdjacents());
 
-                    System.exit(0x1);
+                    System.exit(0x0);
                 }
             }
 

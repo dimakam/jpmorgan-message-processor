@@ -43,8 +43,8 @@ It means that expected to have endings such as 's' or 'es'
 ### How to use?
 
 It can be used from any IDE, however, the easiest way is to perform the following command:
-* For Windows env: gradlew.bat run -Ppath=<path to file with messages>
-* For Unix env: ./gradlew run -Ppath=<path to file with messages>
+* For Windows env: gradlew.bat run -Ptarget=\<path to file\>
+* For Unix env: ./gradlew run -Ptarget=\<path to file\>
 
 ### Requirements
 - Java 1.8
