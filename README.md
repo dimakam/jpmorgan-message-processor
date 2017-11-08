@@ -45,6 +45,7 @@ It means that expected to have endings such as 's' or 'es'
 It can be used from any IDE, however, the easiest way is to perform the following command:
 * For Windows env: gradlew.bat run -Ptarget=\<path to file\>
 * For Unix env: ./gradlew run -Ptarget=\<path to file\>
+* Test data could be found in the file *input.dat* 
 
 ### Requirements
 - Java 1.8
