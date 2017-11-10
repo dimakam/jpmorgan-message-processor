@@ -66,7 +66,7 @@ public class AppRunner {
         }
     }
 
-    private void printAdjacents(final List<Adjacent> adjacents) {
+    private void printAdjacents(List<Adjacent> adjacents) {
         Optional.of(adjacents)
             .filter(i -> !i.isEmpty())
             .ifPresent(i -> LOGGER.info("There are some adjustment records left:\n" +
@@ -77,7 +77,7 @@ public class AppRunner {
             );
     }
 
-    private void printSales(final List<Sale> sales) {
+    private void printSales(List<Sale> sales) {
         LOGGER.info(sales.stream()
             .map(Sale::toString)
             .collect(Collectors.joining("\n")) + "\n"

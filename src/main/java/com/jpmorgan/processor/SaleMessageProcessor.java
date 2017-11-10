@@ -42,7 +42,7 @@ public final class SaleMessageProcessor implements MessageProcessor {
     }
 
     @Override
-    public Statistics process(final String message) {
+    public Statistics process(String message) {
         Assert.hasText(message, "message is required");
 
         Message beanMessage = DESERIALIZER.deserialize(message);

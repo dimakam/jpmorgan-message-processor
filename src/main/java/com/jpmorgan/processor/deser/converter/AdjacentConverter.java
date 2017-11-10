@@ -16,7 +16,7 @@ public class AdjacentConverter implements Converter<AdjacentMessage> {
         "^(?<OPERATION>[a-zA-Z]+) (?<PRICE>\\d+)p (?<NAME>\\p{Graph}+)[es|s]+$", Pattern.CASE_INSENSITIVE);
 
     @Override
-    public AdjacentMessage convert(final String message) {
+    public AdjacentMessage convert(String message) {
         Matcher matcher = FORMAT.matcher(message);
         if (matcher.find()) {
             return new AdjacentMessage(
@@ -29,7 +29,7 @@ public class AdjacentConverter implements Converter<AdjacentMessage> {
     }
 
     @Override
-    public boolean isSupported(final String message) {
+    public boolean isSupported(String message) {
         return FORMAT.asPredicate().test(message);
     }
 

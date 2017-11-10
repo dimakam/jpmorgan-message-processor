@@ -11,7 +11,7 @@ public final class Sale {
     private final int quantity;
     private final int totalPrice;
 
-    public Sale(final String product, final int totalPrice, final int quantity) {
+    public Sale(String product, int totalPrice, int quantity) {
         Assert.hasText(product, "product is required");
         Assert.isTrue(quantity >= 0, "quantity must be positive");
 
@@ -44,14 +44,14 @@ public final class Sale {
     }
 
     @Override
-    public boolean equals(final Object obj) {
+    public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
         if (Objects.isNull(obj) || getClass() != obj.getClass()) {
             return false;
         }
-        final Sale sale = (Sale) obj;
+        Sale sale = (Sale) obj;
         return quantity == sale.quantity &&
             totalPrice == sale.totalPrice &&
             Objects.equals(product, sale.product);
@@ -66,7 +66,7 @@ public final class Sale {
             .toString();
     }
 
-    private void validate(final Sale sale) {
+    private void validate(Sale sale) {
         if (!product.equalsIgnoreCase(sale.getProduct())) {
             throw new IllegalArgumentException("Cannot add because of different product's type");
         }

@@ -12,11 +12,11 @@ public class Adjacent {
     private final Operation operation;
     private final int delta;
 
-    public Adjacent(final Sale newSale, final Operation operation, int delta) {
+    public Adjacent(Sale newSale, Operation operation, int delta) {
         this(null, newSale, operation, delta);
     }
 
-    public Adjacent(final Sale previousSale, final Sale newSale, final Operation operation, int delta) {
+    public Adjacent(Sale previousSale, Sale newSale, Operation operation, int delta) {
         this.newSale = Assert.notNull(newSale, "newSale is required");
         this.operation = Assert.notNull(operation, "operation is required");
         this.previousSale = Optional.ofNullable(previousSale);

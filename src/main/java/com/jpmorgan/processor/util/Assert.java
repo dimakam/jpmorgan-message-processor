@@ -11,14 +11,14 @@ public final class Assert {
         throw new IllegalArgumentException();
     }
 
-    public static <T> T notNull(final T object, final String message) {
+    public static <T> T notNull(T object, String message) {
         if (Objects.isNull(object)) {
             throw new IllegalArgumentException(message);
         }
         return object;
     }
 
-    public static void hasText(final String target, final String message) {
+    public static void hasText(String target, String message) {
         if (Objects.isNull(target) || target.trim().isEmpty()) {
             throw new IllegalArgumentException(message);
         }

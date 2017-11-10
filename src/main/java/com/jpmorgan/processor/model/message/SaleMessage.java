@@ -11,11 +11,11 @@ public class SaleMessage implements Message {
     private final int price;
     private final int quantity;
 
-    public SaleMessage(final String product, final int price) {
+    public SaleMessage(String product, int price) {
         this(product, price, 1);
     }
 
-    public SaleMessage(final String product, final int price, final int quantity) {
+    public SaleMessage(String product, int price, int quantity) {
         Assert.hasText(product, "product is required");
         Assert.isTrue(quantity >= 0, "quantity cannot be less than 0");
 
@@ -36,7 +36,7 @@ public class SaleMessage implements Message {
         return price;
     }
 
-    public SaleMessage apply(final Operation operation, final SaleMessage saleMessage) {
+    public SaleMessage apply(Operation operation, SaleMessage saleMessage) {
         Assert.notNull(operation, "operation is required");
         Assert.notNull(saleMessage, "saleMessage is required");
 

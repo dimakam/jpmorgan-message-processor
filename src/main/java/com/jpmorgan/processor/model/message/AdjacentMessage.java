@@ -10,7 +10,7 @@ public final class AdjacentMessage implements Message {
     private final SaleMessage saleMessage;
     private final Operation operation;
 
-    public AdjacentMessage(final Operation operation, final SaleMessage saleMessage) {
+    public AdjacentMessage(Operation operation, SaleMessage saleMessage) {
         this.saleMessage = Assert.notNull(saleMessage, "sale is required");
         this.operation = Assert.notNull(operation, "operation is required");
     }
