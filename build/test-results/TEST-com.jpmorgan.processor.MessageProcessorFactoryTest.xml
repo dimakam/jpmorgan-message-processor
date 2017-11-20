@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jpmorgan.processor.MessageProcessorFactoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-11-06T22:49:44" hostname="localhost" time="0.011">
-  <properties/>
-  <testcase name="negativeThroughputException" classname="com.jpmorgan.processor.MessageProcessorFactoryTest" time="0.003"/>
-  <testcase name="negativeBatchSizeException" classname="com.jpmorgan.processor.MessageProcessorFactoryTest" time="0.0"/>
-  <testcase name="defaultParameters" classname="com.jpmorgan.processor.MessageProcessorFactoryTest" time="0.007"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
